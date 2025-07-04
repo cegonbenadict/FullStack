@@ -1,0 +1,8 @@
+CREATE DATABASE IF NOT EXISTS student_todo_db;
+USE student_todo_db;
+CREATE TABLE IF NOT EXISTS task (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    completed BOOLEAN DEFAULT FALSE
+);
